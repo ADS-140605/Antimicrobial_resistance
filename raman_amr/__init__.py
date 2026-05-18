@@ -8,6 +8,7 @@ from .models import (
     Conv2DBranch,
     count_parameters,
 )
+from .data import RamanNpzDataset, stratified_split, collate_multimodal
 from .svm import RamanSVMClassifier
 
 __all__ = [
@@ -16,6 +17,10 @@ __all__ = [
     "WaveletOnlyCNN",
     "Conv1DBranch",
     "Conv2DBranch",
+    "RamanNpzDataset",
+    "stratified_split",
+    "collate_multimodal",
     "RamanSVMClassifier",
     "count_parameters",
 ]
+

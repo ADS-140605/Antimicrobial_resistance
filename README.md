@@ -22,3 +22,26 @@ python scripts/inspect_models.py
 - Wavelet input: `(batch, 3, 224, 224)`
 
 The code focuses on the model definitions. You can plug these into your own training loop or dataset loader.
+
+## Training and evaluation
+
+The repository now includes simple CLI scripts for `.npz` datasets with `spectral`, `wavelet`, and `labels` arrays.
+
+Train a CNN:
+
+```bash
+python scripts/train.py --data path/to/dataset.npz --model multimodal --epochs 40
+```
+
+Evaluate a trained CNN:
+
+```bash
+python scripts/evaluate.py --data path/to/dataset.npz --model multimodal --checkpoint outputs/multimodal_best.pt
+```
+
+Evaluate the SVM baseline:
+
+```bash
+python scripts/evaluate.py --data path/to/dataset.npz --model svm
+```
+
