@@ -1,3 +1,10 @@
-numpy
+numpy>=1.21
+scipy
+pandas
 scikit-learn
-torch
+matplotlib
+torch>=1.12
+joblib
+captum
+shap
+jupyterlab
