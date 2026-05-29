@@ -5,3 +5,33 @@ __pycache__/
 data/
 logs/
 graphify-out
+# Virtual environments
+.venv/
+env/
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTest / mypy caches
+.pytest_cache/
+.mypy_cache/
+
+# Temporary / outputs
+tmp/
+outputs/
+
+# Model and checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.pth.tar
+
+# OS / editor configs
+.DS_Store
+.vscode/
+.idea/
